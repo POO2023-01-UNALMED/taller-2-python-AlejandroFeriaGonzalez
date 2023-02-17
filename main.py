@@ -36,7 +36,7 @@ class Auto(object):
         self.registro = registro
 
     def cantidadAsientos(self) -> int:
-        return len(self.asientos)
+        return len([i for i in self.asientos if i != None])
 
     def verificarIntegridad(self) -> str:
         #que el atributo registro de Motor, Auto y Cada Asiento sean el mismo
